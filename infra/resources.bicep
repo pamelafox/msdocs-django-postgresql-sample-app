@@ -312,6 +312,7 @@ resource web 'Microsoft.Web/sites@2024-04-01' = {
     siteConfig: {
       linuxFxVersion: 'PYTHON|3.12' // Set to Python 3.12
       ftpsState: 'Disabled'
+      minTlsVersion: '1.2'
       appCommandLine: 'startup.sh'
       minTlsVersion: '1.2'
     }
